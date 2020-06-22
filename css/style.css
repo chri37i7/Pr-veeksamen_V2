@@ -9,6 +9,7 @@
  * {
    margin: 0;
    padding: 0;
+   font-family: sans-serif;
 }
 
 /* Set height, and flex on body */
@@ -23,7 +24,7 @@ body {
   Only works with flex, and 100vh on body.
 */
 main {
-   height: 100%;
+   height: -webkit-fill-available;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -52,7 +53,6 @@ main {
 
 .banner h1 {
    font-size: 36px;
-   font-family: sans-serif;
    margin: 1em 0 1em 0.6em;
    font-weight: lighter;
 }
@@ -97,7 +97,6 @@ main {
 .navigation ul li a {
    color: #FFF;
    text-decoration: none;
-   font-family: sans-serif;
    height: inherit;
    display: flex;
    align-items: center;
@@ -118,7 +117,6 @@ main {
 
 .page_footer h3 {
    color: #FFF;
-   font-family: sans-serif;
    font-weight: 200;
    margin: 20px 0 0px 15px;
 }
@@ -137,7 +135,6 @@ main {
 
 .newsletter_container form label {
    color: #fff;
-   font-family: sans-serif;
    margin-bottom: 8px
 }
 
@@ -200,32 +197,45 @@ main {
    }
 }
 
-/* Information
+/* Articles 
 -------------------------------------------------- */
 
-.info_container {
+.article_container {
+   font-weight: 200;
+   margin: 30px 0;
    display: flex;
 }
 
-.info_container article {
-   width: 350px;
+.article_container article {
+   width: 335px;
 }
 
-.info_container article:nth-child(2) {
-   width: 350px;
-   margin: 0 15px;
+.article_container article:nth-child(2) {
+   width: 335px;
+   margin: 0 35px;
 }
 
-.info_container article img {
-   width: 350px;
+.article_container article img {
+   width: 335px;
    border: 1px solid #CDCDCD;
 }
 
-.info_container article p {
+.article_container article h1 {
+   margin: 5px 0;
+}
+
+.article_container article p {
    margin-bottom: 10px;
 }
 
-.info_container article a {
+.article_container article a {
    text-decoration: none;
    color: var(--main-accent-color);;
+}
+
+/* News 
+-------------------------------------------------- */
+
+.news_container header h1 {
+   margin-bottom: -15px;
 }

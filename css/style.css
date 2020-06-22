@@ -1,4 +1,11 @@
- 
+:root {
+   /* Main Color */
+  --main-bg-color: #008040;
+  /* Main Accent Color*/
+  --main-accent-color: #007839;
+}
+
+
  /* Reset page margin and padding */
  * {
    margin: 0;
@@ -65,11 +72,11 @@ main {
 -------------------------------------------------- */
 
 .active {
-   background-color: #007839;
+   background-color: var(--main-accent-color);
 }
 
 .navigation {
-  background-color: #008040;
+  background-color: var(--main-bg-color);
   display: flex;
   justify-content: space-evenly;
 }
@@ -98,7 +105,7 @@ main {
 }
 
 .navigation ul li:hover {
-   background-color: #007839;
+   background-color: var(--main-accent-color);;
 }
 
 /* Footer
@@ -107,7 +114,7 @@ main {
 .page_footer {
    display: flex;
    justify-content: center;
-   background-color: #008040;
+   background-color: var(--main-bg-color);
 }
 
 .page_footer h3 {
@@ -192,4 +199,34 @@ main {
    to {
        opacity: 1
    }
+}
+
+/* Information
+-------------------------------------------------- */
+
+.info_container {
+   display: flex;
+}
+
+.info_container article {
+  width: 350px;
+}
+
+.info_container article:nth-child(2) {
+  width: 350px;
+  margin: 0 15px;
+}
+
+.info_container article img {
+  width: 350px;
+  border: 1px solid #CDCDCD;
+}
+
+.info_container article p {
+  margin-bottom: 10px;
+}
+
+.info_container article a {
+  text-decoration: none;
+  color: var(--main-accent-color);;
 }

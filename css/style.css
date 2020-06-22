@@ -311,6 +311,11 @@ main {
       width: 500px;
    }
 
+   .departments_container aside {
+      width: 460px;
+      margin-bottom: 10px;
+   }
+
    .news_container h1 {
       width: 500px;
       margin: 0 auto;

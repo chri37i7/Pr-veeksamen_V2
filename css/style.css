@@ -18,6 +18,9 @@ body {
 */
 main {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Banner
@@ -89,7 +92,7 @@ main {
   color: #FFF;
   text-decoration: none;
   font-family: sans-serif;
-  height: 100%;
+  height: inherit;
   display: flex;
   align-items: center;
 }
@@ -144,4 +147,49 @@ main {
   height: 35px;
   border-radius: 5px;
   border: 0px;
+}
+
+/* Slideshow
+-------------------------------------------------- */
+
+/* Slideshow container */
+.slideshow-container {
+   margin: 20px;
+   width: 1080px;
+   height: 350px;
+}
+
+/* Hide the images by default */
+.mySlides {
+   display: none;
+   height: 100%;
+}
+
+/* Fading animation */
+.fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 2.5s;
+   animation-direction: alternate;
+   animation-name: fade;
+   animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+   from {
+       opacity: .3
+   }
+
+   to {
+       opacity: 1
+   }
+}
+
+@keyframes fade {
+   from {
+       opacity: .3
+   }
+
+   to {
+       opacity: 1
+   }
 }

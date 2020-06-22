@@ -311,8 +311,9 @@ main {
       width: 500px;
    }
 
-   .news_container header h1 {
-      margin-left: 40px;
+   .news_container h1 {
+      width: 500px;
+      margin: 0 auto;
       margin-bottom: -60px;
    }
 }

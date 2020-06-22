@@ -10,6 +10,7 @@
    margin: 0;
    padding: 0;
    font-family: sans-serif;
+   font-weight: lighter;
 }
 
 /* Set height, and flex on body */
@@ -139,7 +140,7 @@ main {
 }
 
 .newsletter_container form input {
-   height: 25px;
+   height: 35px;
    width: 280px;
    border-radius: 3px;
    border: 2px #000;
@@ -221,6 +222,7 @@ main {
 }
 
 .article_container article h1 {
+   font-size: 18pt;
    margin: 5px 0;
 }
 
@@ -233,13 +235,17 @@ main {
    color: var(--main-accent-color);;
 }
 
+.info article h1 {
+   font-size: 24pt;
+}
+
 /* News 
 -------------------------------------------------- */
 
 .news_container header h1 {
+   font-size: 24pt;
    margin-bottom: -15px;
 }
-
 
 /* Departments 
 -------------------------------------------------- */
@@ -261,6 +267,10 @@ main {
 
 .departments_container aside p {
    margin: 10px 0;
+}
+
+.departments_container aside h1 {
+   font-size: 22pt;
 }
 
 .departments_container aside a {

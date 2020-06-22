@@ -105,21 +105,43 @@ footer {
    display: flex;
    justify-content: center;
    background-color: #008040;
-   height: 450px;
 }
 
 footer h3 {
    color: #FFF;
    font-family: sans-serif;
    font-weight: 200;
+   margin: 20px 0 0px 15px;
 }
 
 footer img {
   height: 80px;
   margin: 10px 15px;
-  width: 250px;
+  width: 230px;
 }
 
-#partners {
-   margin: 20px 0 0px 15px;
+footer form {
+   margin: 15px;
+   display: flex;
+   flex-direction: column;
+}
+
+footer form label {
+  color: #fff;
+  font-family: sans-serif;
+  margin-bottom: 8px
+}
+
+footer form input {
+  height: 25px;
+  width: 280px;
+  border-radius: 3px;
+  border: 2px #000;
+}
+
+footer form button {
+  width: 70px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0px;
 }
